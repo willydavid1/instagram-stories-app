@@ -109,3 +109,24 @@
   font-size: 14px;
   cursor: pointer;
 }
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+  .wrapperDescription * {
+    width: 100%;
+    text-align: center;
+  }
+  .wrapperDescription {
+    width: 100%;
+    margin: 0 .5rem;
+  }
+  .wrapperDescription input {
+    width: 100%;
+  }
+  .deleteURL {
+    width: initial;
+  }
+}
