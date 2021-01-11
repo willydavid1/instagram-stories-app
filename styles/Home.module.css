@@ -2,8 +2,110 @@
   height: 100vh;
   padding: 0 0.5rem;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.wrapperDescription {
+  height: 100%;
+  margin-left: 1rem;
+  width: 30rem;
+  color: #ffffff;
+}
+
+.input {
+  position: relative;
+}
+
+.inputText {
+  display: block;
+  margin: 0;
+  color: inherit;
+  width: 100%;
+  font-family: inherit;
+  font-weight: inherit;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  color: black;
+  font-size: .95rem;
+}
+
+.inputText::placeholder {
+  color: #B0BEC5;
+}
+
+.inputText:focus {
+  outline: none;
+}
+
+.numberText {
+  display: block;
+  margin: 0;
+  color: inherit;
+  width: 100%;
+  font-family: inherit;
+  font-weight: inherit;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+  color: black;
+  font-size: .95rem;
+  margin-top: 1rem;
+}
+
+.numberText::placeholder {
+  color: #B0BEC5;
+}
+
+.numberText:focus {
+  outline: none;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.wrapperURLs {
+  max-height: 335px;
+  overflow: auto;
+  margin-top: 1rem;
+  background: #ffffff;
+  color: black;
+}
+
+.li {
+  margin: 0.5rem 0;
+}
+
+.text {
+  width: 100px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0;
+  width: 25rem;
+}
+
+.deleteURL {
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
 }
