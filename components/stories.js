@@ -75,20 +75,18 @@ export const Stories = ({ defaultInterval, storiesValues, width, height }) => {
           <button className="pauseButton" onClick={toggleStory}>
             {
               auto 
-                ? 'PAUSE'
+                ? 'STOP'
                 : 'PLAY'
             }
           </button>
           <div 
             onMouseUp={(e) => toggleStory(e, true)}
             onMouseDown={(e) => moveStory(e, 'left')}
-            onTouchStart={(e) => moveStory(e, 'left')}
             onTouchEnd={(e) => toggleStory(e, true)}
           />
           <div
             onMouseUp={(e) => toggleStory(e, true)}
             onMouseDown={(e) => moveStory(e, 'right')}
-            onTouchStart={(e) => moveStory(e, 'right')}
             onTouchEnd={(e) => toggleStory(e, true)}
           />
         </div>
